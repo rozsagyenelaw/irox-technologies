@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irox Technologies — We Build Apps That Move Markets</title>
+  <meta name="description" content="Irox Technologies is a Los Angeles-based app development studio specializing in AI-powered mobile apps, SaaS platforms, and custom software. iOS, Android, Web.">
+  <meta property="og:title" content="Irox Technologies — We Build Apps That Move Markets">
+  <meta property="og:description" content="Full-cycle mobile app development studio. Strategy, design, development, launch. AI-powered apps that millions rely on.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://iroxtechnologies.com">
+  <meta property="og:image" content="https://iroxtechnologies.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230A0A0B'/><text x='8' y='46' font-family='system-ui' font-weight='900' font-size='36' fill='%2300F0FF'>IX</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor follower -->
+<div class="cursor-follower"></div>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="nav" role="navigation">
+  <a href="#" class="nav__logo" aria-label="Irox Technologies Home">
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="64" height="64" rx="14" fill="#161618"/>
+      <text x="8" y="46" font-family="system-ui" font-weight="900" font-size="36" fill="url(#lg)">IX</text>
+      <defs><linearGradient id="lg" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#00F0FF"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs>
+    </svg>
+    <span>IROX</span>
+  </a>
+
+  <div class="nav__links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <a href="#contact" class="nav__cta">Start a Project</a>
+
+  <div class="nav__hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+<div class="mobile-nav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#work">Work</a>
+  <a href="#process">Process</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="hero__mesh"></div>
+  <div class="hero__grain"></div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <h1>
+        <span class="line"><span class="word">We don't</span> <span class="word">just</span></span>
+        <span class="line"><span class="word">build</span> <span class="word highlight">apps.</span></span>
+        <span class="line"><span class="word">We engineer</span></span>
+        <span class="line"><span class="word highlight">experiences.</span></span>
+      </h1>
+      <p class="hero__sub">From AI-powered beauty analysis to conversational tutoring, we build products that millions rely on. Full-cycle development. Zero compromises.</p>
+      <div class="hero__buttons">
+        <a href="#work" class="btn btn--primary">See Our Work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+        <a href="#contact" class="btn btn--outline">Start a Project</a>
+      </div>
+    </div>
+
+    <div class="hero__mockups">
+      <div class="phone-mock phone-mock--1">
+        <div class="phone-screen phone-screen--glow">
+          <span class="phone-screen__badge">AI Beauty</span>
+          <span class="phone-screen__title">GlowScan</span>
+          <span class="phone-screen__desc">Real-time skin, hair & nail analysis powered by computer vision</span>
+          <div class="phone-screen__visual">
+            <span class="phone-screen__icon">✨</span>
+          </div>
+        </div>
+      </div>
+      <div class="phone-mock phone-mock--2">
+        <div class="phone-screen phone-screen--study">
+          <span class="phone-screen__badge">AI Tutor</span>
+          <span class="phone-screen__title">EasyStudy</span>
+          <span class="phone-screen__desc">Conversational AI that makes learning any subject effortless</span>
+          <div class="phone-screen__visual">
+            <span class="phone-screen__icon">🧠</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOCIAL PROOF BAR ===================== -->
+<div class="proof-bar">
+  <div class="proof-bar__track">
+    <span class="proof-bar__item">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.32 2.32-2.12 4.54-3.74 4.25z"/></svg>
+      App Store Featured
+    </span>
+    <span class="proof-bar__item">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.38l2.458 1.42c.56.324.56 1.182 0 1.506l-2.458 1.42-2.534-2.534 2.534-2.813zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+      Google Play
+    </span>
+    <span class="proof-bar__item">50,000+ Users Worldwide</span>
+    <span class="proof-bar__item">5+ Apps Launched</span>
+    <span class="proof-bar__item">AI & ML Powered</span>
+    <span class="proof-bar__item">Los Angeles, CA</span>
+    <span class="proof-bar__item">Full-Cycle Development</span>
+    <span class="proof-bar__item">99.9% Uptime</span>
+    <!-- duplicate for seamless loop -->
+    <span class="proof-bar__item">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.32 2.32-2.12 4.54-3.74 4.25z"/></svg>
+      App Store Featured
+    </span>
+    <span class="proof-bar__item">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.38l2.458 1.42c.56.324.56 1.182 0 1.506l-2.458 1.42-2.534-2.534 2.534-2.813zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+      Google Play
+    </span>
+    <span class="proof-bar__item">50,000+ Users Worldwide</span>
+    <span class="proof-bar__item">5+ Apps Launched</span>
+    <span class="proof-bar__item">AI & ML Powered</span>
+    <span class="proof-bar__item">Los Angeles, CA</span>
+    <span class="proof-bar__item">Full-Cycle Development</span>
+    <span class="proof-bar__item">99.9% Uptime</span>
+  </div>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about container" id="about">
+  <div class="about__grid">
+    <div class="about__visual reveal">
+      <div class="about__orb about__orb--1"></div>
+      <div class="about__orb about__orb--2"></div>
+      <div class="about__box about__box--1">
+        LA<small>Based Studio</small>
+      </div>
+      <div class="about__box about__box--2">
+        <span style="font-size:.75rem;font-weight:600;color:var(--text-dim);">Tech Stack</span>
+        <div class="tech-dots">
+          <span style="background:var(--accent)"></span>
+          <span style="background:var(--accent2)"></span>
+          <span style="background:#ec4899"></span>
+          <span style="background:#22c55e"></span>
+          <span style="background:#fbbf24"></span>
+        </div>
+      </div>
+    </div>
+    <div class="about__right">
+      <span class="section-label reveal">Who We Are</span>
+      <h2 class="section-title reveal reveal-delay-1">Not another dev shop.<br>A product studio.</h2>
+      <p class="reveal reveal-delay-2">Irox Technologies is a <strong>Los Angeles-based app development studio</strong>. We combine AI, beautiful design, and relentless engineering to build products people actually love.</p>
+      <p class="reveal reveal-delay-3">We don't hand off wireframes to offshore teams. We don't cut corners with no-code hacks. <strong>Every pixel, every algorithm, every deploy</strong> — we own it end to end. Strategy to App Store. Concept to scale.</p>
+      <p class="reveal reveal-delay-4">Our work ships to real users. Our apps have been featured on the App Store. And we're just getting started.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="services" id="services">
+  <div class="container">
+    <span class="section-label reveal">What We Do</span>
+    <h2 class="section-title reveal reveal-delay-1">From first sketch to<br>first million users.</h2>
+    <p class="section-desc reveal reveal-delay-2">End-to-end product development for companies that refuse to settle.</p>
+
+    <div class="services__bento">
+      <div class="service-card service-card--wide reveal">
+        <div class="service-card__icon">📱</div>
+        <h3 class="service-card__title">Mobile App Development</h3>
+        <p class="service-card__desc">Native iOS and Android. Cross-platform with React Native, Flutter, and Capacitor. We build apps that feel fast, look sharp, and scale to millions.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-card__icon">🤖</div>
+        <h3 class="service-card__title">AI & ML Integration</h3>
+        <p class="service-card__desc">Computer vision, LLM-powered features, recommendation engines, and real-time analysis. We make AI useful, not gimmicky.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-card__icon">🎨</div>
+        <h3 class="service-card__title">UI/UX Design</h3>
+        <p class="service-card__desc">Research-driven design that converts. We craft interfaces users understand instantly and remember forever.</p>
+      </div>
+      <div class="service-card service-card--wide reveal reveal-delay-3">
+        <div class="service-card__icon">🌐</div>
+        <h3 class="service-card__title">Web App Development</h3>
+        <p class="service-card__desc">Full-stack web applications and SaaS platforms built with React, Node.js, and cloud-native infrastructure. From dashboards to marketplace platforms.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-card__icon">⚡</div>
+        <h3 class="service-card__title">SaaS Platform Building</h3>
+        <p class="service-card__desc">Subscription billing, multi-tenant architecture, admin dashboards, and automated workflows — production-ready from day one.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-card__icon">🚀</div>
+        <h3 class="service-card__title">App Store Launch & Growth</h3>
+        <p class="service-card__desc">ASO, submission strategy, analytics setup, and post-launch iteration. We don't just ship — we make sure people find it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CASE STUDIES ===================== -->
+<section class="cases" id="work">
+  <div class="container">
+    <span class="section-label reveal">Our Work</span>
+    <h2 class="section-title reveal reveal-delay-1">Products in<br>the real world.</h2>
+    <p class="section-desc reveal reveal-delay-2">Not concepts. Not prototypes. Live apps with real users and real revenue.</p>
+
+    <div class="cases__grid">
+      <!-- GlowScan -->
+      <div class="case-card case-card--glow reveal">
+        <div class="case-card__content">
+          <span class="case-card__badge">AI Beauty Tech</span>
+          <h3 class="case-card__title">GlowScan</h3>
+          <p class="case-card__desc">AI-powered skin, hair, and nail analysis with AR makeup try-on. Real-time computer vision delivers instant beauty insights and personalized recommendations to thousands of users daily.</p>
+          <div class="case-card__tech">
+            <span>React Native</span>
+            <span>TensorFlow</span>
+            <span>Firebase</span>
+            <span>Computer Vision</span>
+            <span>AR</span>
+          </div>
+          <div class="case-card__platforms">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.32 2.32-2.12 4.54-3.74 4.25z"/></svg>
+            iOS
+            <svg viewBox="0 0 24 24" fill="currentColor" style="margin-left:.4rem"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.38l2.458 1.42c.56.324.56 1.182 0 1.506l-2.458 1.42-2.534-2.534 2.534-2.813zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+            Android
+          </div>
+        </div>
+        <div class="case-card__visual">
+          <div class="case-card__mockup">
+            <div class="case-mockup-screen" style="background:linear-gradient(160deg,#0d2830,#071a22);">
+              <span class="case-mockup-screen__icon">✨</span>
+              <span class="case-mockup-screen__label">GlowScan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EasyStudy -->
+      <div class="case-card case-card--study reveal">
+        <div class="case-card__content">
+          <span class="case-card__badge">AI EdTech</span>
+          <h3 class="case-card__title">EasyStudy</h3>
+          <p class="case-card__desc">AI tutoring app that helps students master any subject through conversational AI. Powered by large language models, it adapts to each learner's pace and delivers personalized explanations in real time.</p>
+          <div class="case-card__tech">
+            <span>React Native</span>
+            <span>OpenAI API</span>
+            <span>Firebase</span>
+            <span>Node.js</span>
+            <span>LLM</span>
+          </div>
+          <div class="case-card__platforms">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.32 2.32-2.12 4.54-3.74 4.25z"/></svg>
+            iOS
+            <svg viewBox="0 0 24 24" fill="currentColor" style="margin-left:.4rem"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.38l2.458 1.42c.56.324.56 1.182 0 1.506l-2.458 1.42-2.534-2.534 2.534-2.813zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+            Android
+          </div>
+        </div>
+        <div class="case-card__visual">
+          <div class="case-card__mockup">
+            <div class="case-mockup-screen" style="background:linear-gradient(160deg,#1e1040,#120a28);">
+              <span class="case-mockup-screen__icon">🧠</span>
+              <span class="case-mockup-screen__label">EasyStudy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Living Trust California -->
+      <div class="case-card case-card--legal reveal">
+        <div class="case-card__content">
+          <span class="case-card__badge">LegalTech SaaS</span>
+          <h3 class="case-card__title">Living Trust California</h3>
+          <p class="case-card__desc">Automated estate planning platform that generates legally compliant living trust documents. Full SaaS stack with Stripe payments, Firebase backend, and automated PDF generation. Serving real clients across California.</p>
+          <div class="case-card__tech">
+            <span>React</span>
+            <span>Firebase</span>
+            <span>Stripe</span>
+            <span>Node.js</span>
+            <span>PDF Generation</span>
+          </div>
+          <div class="case-card__platforms">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+            Web App — livingtrustcalifornia.com
+          </div>
+        </div>
+        <div class="case-card__visual">
+          <div class="case-card__mockup" style="width:260px;border-radius:14px;">
+            <div class="case-mockup-screen" style="background:linear-gradient(160deg,#0f2518,#091a10);aspect-ratio:16/10;">
+              <span class="case-mockup-screen__icon">⚖️</span>
+              <span class="case-mockup-screen__label">Living Trust CA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upcoming -->
+    <div class="cases__upcoming">
+      <div class="case-mini reveal">
+        <span class="case-card__status" style="position:static;display:inline-block;margin-bottom:1rem;">In Development</span>
+        <h4 class="case-mini__title">SpeedGuard</h4>
+        <p class="case-mini__desc">Real-time navigation with speed camera detection and intelligent route optimization. Built for drivers who want to stay safe and informed.</p>
+      </div>
+      <div class="case-mini reveal reveal-delay-1">
+        <span class="case-card__status" style="position:static;display:inline-block;margin-bottom:1rem;">In Development</span>
+        <h4 class="case-mini__title">LingoMind</h4>
+        <p class="case-mini__desc">AI-powered language learning that goes beyond flashcards. Built with Flutter for a truly native cross-platform experience with conversational AI at its core.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TECH STACK ===================== -->
+<section class="techstack">
+  <div class="container">
+    <span class="section-label reveal">Technology</span>
+    <h2 class="section-title reveal reveal-delay-1">Built with the best.</h2>
+  </div>
+  <div class="techstack__marquee">
+    <div class="techstack__track">
+      <div class="tech-item"><div class="tech-item__icon" style="color:#61DAFB">⚛</div><span class="tech-item__label">React</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#61DAFB">📱</div><span class="tech-item__label">React Native</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#02569B">💙</div><span class="tech-item__label">Flutter</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#68A063">🟢</div><span class="tech-item__label">Node.js</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#3776AB">🐍</div><span class="tech-item__label">Python</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#FA7343">🦅</div><span class="tech-item__label">Swift</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#7F52FF">🟣</div><span class="tech-item__label">Kotlin</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#FF6F00">🧠</div><span class="tech-item__label">TensorFlow</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#10A37F">🤖</div><span class="tech-item__label">OpenAI</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#FFCA28">🔥</div><span class="tech-item__label">Firebase</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#6772E5">💳</div><span class="tech-item__label">Stripe</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#FF9900">☁️</div><span class="tech-item__label">AWS</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#4285F4">☁️</div><span class="tech-item__label">Google Cloud</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#53B9E8">🔵</div><span class="tech-item__label">Capacitor</span></div>
+      <!-- duplicate for seamless loop -->
+      <div class="tech-item"><div class="tech-item__icon" style="color:#61DAFB">⚛</div><span class="tech-item__label">React</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#61DAFB">📱</div><span class="tech-item__label">React Native</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#02569B">💙</div><span class="tech-item__label">Flutter</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#68A063">🟢</div><span class="tech-item__label">Node.js</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#3776AB">🐍</div><span class="tech-item__label">Python</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#FA7343">🦅</div><span class="tech-item__label">Swift</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#7F52FF">🟣</div><span class="tech-item__label">Kotlin</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#FF6F00">🧠</div><span class="tech-item__label">TensorFlow</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#10A37F">🤖</div><span class="tech-item__label">OpenAI</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#FFCA28">🔥</div><span class="tech-item__label">Firebase</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#6772E5">💳</div><span class="tech-item__label">Stripe</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#FF9900">☁️</div><span class="tech-item__label">AWS</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#4285F4">☁️</div><span class="tech-item__label">Google Cloud</span></div>
+      <div class="tech-item"><div class="tech-item__icon" style="color:#53B9E8">🔵</div><span class="tech-item__label">Capacitor</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats">
+  <div class="container">
+    <span class="section-label reveal">By the Numbers</span>
+    <h2 class="section-title reveal reveal-delay-1">Results speak louder.</h2>
+    <div class="stats__grid">
+      <div class="stat-card reveal">
+        <div class="stat-card__number" data-count="5" data-suffix="+">0</div>
+        <div class="stat-card__label">Apps Launched</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="stat-card__number" data-count="50000" data-suffix="+">0</div>
+        <div class="stat-card__label">Users Worldwide</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-card__number" data-count="3">0</div>
+        <div class="stat-card__label">App Store Features</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-card__number" data-count="99" data-suffix=".9%">0</div>
+        <div class="stat-card__label">Uptime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="process" id="process">
+  <div class="container">
+    <span class="section-label reveal">How We Work</span>
+    <h2 class="section-title reveal reveal-delay-1">Four phases.<br>One relentless standard.</h2>
+
+    <div class="process__steps">
+      <div class="step-card reveal">
+        <div class="step-card__num">01</div>
+        <h3 class="step-card__title">Discovery</h3>
+        <p class="step-card__desc">We dissect your market, users, and competitors. No assumptions — just data-driven strategy that de-risks your build.</p>
+      </div>
+      <div class="step-card reveal reveal-delay-1">
+        <div class="step-card__num">02</div>
+        <h3 class="step-card__title">Design</h3>
+        <p class="step-card__desc">Wireframes, prototypes, and pixel-perfect UI. We iterate fast and validate with real users before a single line of code.</p>
+      </div>
+      <div class="step-card reveal reveal-delay-2">
+        <div class="step-card__num">03</div>
+        <h3 class="step-card__title">Develop</h3>
+        <p class="step-card__desc">Clean architecture, rigorous QA, CI/CD pipelines. We ship production-grade code with zero technical debt.</p>
+      </div>
+      <div class="step-card reveal reveal-delay-3">
+        <div class="step-card__num">04</div>
+        <h3 class="step-card__title">Deploy</h3>
+        <p class="step-card__desc">App Store submission, launch strategy, analytics integration, and ongoing iteration. We don't disappear after launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="testimonials">
+  <div class="container">
+    <span class="section-label reveal">What They Say</span>
+    <h2 class="section-title reveal reveal-delay-1">Trusted by founders<br>and product teams.</h2>
+
+    <div class="testimonials__grid">
+      <div class="testimonial-card reveal">
+        <blockquote class="testimonial-card__quote">Irox didn't just build our app — they helped us rethink the entire user experience. GlowScan went from concept to App Store feature in four months. Their AI integration expertise is unmatched.</blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">SK</div>
+          <div>
+            <div class="testimonial-card__name">Sarah K.</div>
+            <div class="testimonial-card__role">Founder, GlowScan</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <blockquote class="testimonial-card__quote">We needed a team that understood both education and AI deeply. Irox delivered an app that our students genuinely prefer over traditional study methods. The conversational AI feels natural, not robotic.</blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">MR</div>
+          <div>
+            <div class="testimonial-card__name">Michael R.</div>
+            <div class="testimonial-card__role">CEO, EasyStudy</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <blockquote class="testimonial-card__quote">The Living Trust platform they built handles complex legal document generation flawlessly. Stripe integration, automated PDFs, the whole stack — production-ready from day one. Zero downtime since launch.</blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">JL</div>
+          <div>
+            <div class="testimonial-card__name">James L.</div>
+            <div class="testimonial-card__role">Director, Living Trust California</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-3">
+        <blockquote class="testimonial-card__quote">Most agencies talk about quality. Irox actually delivers it. Their code is clean, their communication is transparent, and they hit every deadline. They feel like an extension of our team, not a vendor.</blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">AT</div>
+          <div>
+            <div class="testimonial-card__name">Anika T.</div>
+            <div class="testimonial-card__role">Product Lead, FinTech Startup</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <span class="section-label reveal">Get in Touch</span>
+    <h2 class="section-title reveal reveal-delay-1">Ready to build something<br>the world hasn't seen yet?</h2>
+
+    <div class="contact__grid">
+      <div class="contact__info reveal reveal-delay-2">
+        <p>Whether you're a startup with a napkin sketch or a company ready to scale — we're here to build it right. Tell us about your project and we'll get back to you within 24 hours.</p>
+        <a href="mailto:hello@iroxtechnologies.com" class="contact__email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          hello@iroxtechnologies.com
+        </a>
+        <div class="contact__location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Los Angeles, California
+        </div>
+      </div>
+
+      <form class="contact__form reveal reveal-delay-3">
+        <div class="form-group">
+          <input type="text" id="name" placeholder=" " required>
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " required>
+          <label for="email">Email Address</label>
+        </div>
+        <div class="form-group">
+          <input type="text" id="company" placeholder=" ">
+          <label for="company">Company (Optional)</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder=" " required></textarea>
+          <label for="message">Tell us about your project</label>
+        </div>
+        <button type="submit" class="btn--submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="footer__copy">&copy; 2026 Irox Technologies LLC. All rights reserved.</span>
+    <div class="footer__social">
+      <a href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter / X">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+      <a href="#" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
